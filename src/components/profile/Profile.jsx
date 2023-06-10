@@ -1,5 +1,6 @@
 import "./Profile.css"
 import Card from '../card/Card';
+import Footer from '../footer/Footer'
 
 export default function Profile() {
 
@@ -15,6 +16,7 @@ export default function Profile() {
                     <Card />
                 </article>
             </section>
+            <Footer />
         </>
     )
 }
