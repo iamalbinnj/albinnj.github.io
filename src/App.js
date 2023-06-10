@@ -1,4 +1,5 @@
 import './App.css';
+import Profile from './components/profile/Profile';
 
 function App() {
   const social = [
@@ -51,6 +52,7 @@ function App() {
           <i className='fas fa-chevron-down'></i>
         </section>
       </header>
+      <Profile />
     </>
   );
 }
