@@ -11,7 +11,7 @@ function App() {
     {
       name: "Twitter",
       src: process.env.PUBLIC_URL + `/assets/icon/social/twitter.svg`,
-      href: "https://twitter.com/iamalbinnj"
+      href: "https://twitter.com/_iamalbinnj_"
     },
     {
       name: "Linkedin",
@@ -44,10 +44,6 @@ function App() {
                 );
               })}
             </div>
-          </div>
-          <div className='sponser'>
-            <a href="https://www.buymeacoffee.com/iamalbinnj" target="_blank" rel="noreferrer" className="sponser-btn btn" role="button">
-              <i><img src={process.env.PUBLIC_URL + `/assets/icon/social/sponser-heart.svg`} className="sponser-heart" alt="Sponser-Heart" /></i> Sponser</a>
           </div>
           <i className='fas fa-chevron-down'></i>
         </section>
