@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/albinnj.github.io/static/css/main.5a94f735.css",
-    "main.js": "/albinnj.github.io/static/js/main.6b497619.js",
+    "main.js": "/albinnj.github.io/static/js/main.28443dc7.js",
     "index.html": "/albinnj.github.io/index.html",
     "main.5a94f735.css.map": "/albinnj.github.io/static/css/main.5a94f735.css.map",
-    "main.6b497619.js.map": "/albinnj.github.io/static/js/main.6b497619.js.map"
+    "main.28443dc7.js.map": "/albinnj.github.io/static/js/main.28443dc7.js.map"
   },
   "entrypoints": [
     "static/css/main.5a94f735.css",
-    "static/js/main.6b497619.js"
+    "static/js/main.28443dc7.js"
   ]
 }
