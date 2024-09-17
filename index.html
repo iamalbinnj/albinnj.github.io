@@ -1,13 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albin N J - Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
+
 <body>
-    
+    <nav>
+        <ul>
+            <li><button class="active" data-section="home">Home</button></li>
+            <li><button data-section="about">About</button></li>
+            <li><button data-section="education">Education</button></li>
+            <li><button data-section="projects">Projects</button></li>
+            <li><button data-section="contact">Contact</button></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="min-h-screen">
+        <div class="text-center">
+            <h1>Albin N J</h1>
+            <p>Developer | ML & AI Enthusiast</p>
+        </div>
+        <div id="scroll-down">&#11167;</div>
+    </section>
+
+    <section id="about" class="min-h-screen">
+        <div class="max-w-3xl">
+            <h2>About Me</h2>
+            <p>I'm a passionate developer currently pursuing my MCA at MBITS, with a focus on Machine Learning and
+                Artificial Intelligence. Like a growing tree, I'm constantly branching out to learn new skills and
+                technologies, nurturing my knowledge in the ever-evolving field of computer science.</p>
+        </div>
+    </section>
+
+    <section id="education" class="min-h-screen">
+        <div class="max-w-3xl">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-content">
+                        <h3>2023-2025</h3>
+                        <p>Master of Computer Applications (MCA)</p>
+                        <p>Mar Baselios Institute of Technology and Science (MBITS)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-content">
+                        <h3>2019-2022</h3>
+                        <p>Bachelor of Computer Applications (BCA)</p>
+                        <p>Sahrdaya College of Advanced Studies (SCAS)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="min-h-screen">
+        <div class="max-w-3xl">
+            <h2>Projects</h2>
+            <div class="bg-white project-card">
+                <h3>Deepfake Detection from Video</h3>
+                <p>This project aims to identify deepfake videos by combining Convolutional Neural Networks (CNN) with a
+                    GRU model. Deepfakes, which replace a person in a video with someone else's likeness, present
+                    serious ethical and security risks. This system uses advanced machine learning techniques to
+                    accurately differentiate between real and fake media, helping to address these challenges.</p>
+                <div class="project-links">
+                    <a href="https://github.com/iamalbinnj/DeepFakeDetection" target="_blank" rel="noopener noreferrer"
+                        class="project-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.5a3.5 3.5 0 0 0-.94-2.5c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48 13.27.65 12.65 11.73 1 11.73 1c-1.33.55-2.67 1.15-3.5 2z">
+                            </path>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="min-h-screen">
+        <div class="max-w-3xl text-center">
+            <h2>Get in Touch</h2>
+            <div class="contact-links">
+                <a href="https://github.com/iamalbinnj" target="_blank" rel="noopener noreferrer" aria-label="Go to Albin N J github profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/albinnj/" target="_blank" rel="noopener noreferrer" aria-label="Go to Albin N J linkedin profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="mailto:albinnj0214.com" aria-label="Send email to Albin N J">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
